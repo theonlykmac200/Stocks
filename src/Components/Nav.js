@@ -10,7 +10,7 @@ const Nav =(props) => {
             <div>About</div>
             </Link>
             <Link to="/stocks">
-            <div>Home</div> 
+            <div>Dashboard</div> 
             </Link>
         </div>
     
