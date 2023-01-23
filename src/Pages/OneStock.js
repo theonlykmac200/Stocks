@@ -22,15 +22,15 @@ const OneStock = (props) => {
     getStock()
   }, []);
 console.log(stock);
- 
+ //i changed the alt name because you were getting an error that image is redundant, a screen reader already knows it is an image
     return (
       <div>
         {stock === 'null' ? (
-          <h2>Loading...</h2>
+          <i class="fa fa-spinner fa-spin" style={{ fontSize:"24px", textAlign: "center", display: 'block'}}></i>
         ) : (
       <div>
         <h1>{symbol}</h1>
-        <img src={stock[0].image} alt='image'/>
+        <img src={stock[0].image} alt='company-logo'/>
         <h2>Price: ${stock[0].price}</h2>
         <h4 className="desc">Description{stock[0].description}</h4>
         
